@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm border-b border-border">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <nav className="max-w-full mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center shadow-lg">

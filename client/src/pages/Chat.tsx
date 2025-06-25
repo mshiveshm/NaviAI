@@ -59,7 +59,7 @@ export default function Chat() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-8">
         <div className="mb-8">
           <Link href="/">
             <Button variant="ghost" className="mb-4 hover:bg-muted">

@@ -38,7 +38,7 @@ export default function About() {
       <main>
         {/* Hero Section */}
         <section className="gradient-card py-16 sm:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center">
               <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">About NaviAI</Badge>
               <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
@@ -57,7 +57,7 @@ export default function About() {
 
         {/* Stats Section */}
         <section className="py-16 bg-muted/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -74,7 +74,7 @@ export default function About() {
 
         {/* Story Section */}
         <section className="py-16 sm:py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Story</h2>
@@ -113,7 +113,7 @@ export default function About() {
 
         {/* Team Section */}
         <section className="py-16 sm:py-24 bg-muted/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Meet Our Team</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

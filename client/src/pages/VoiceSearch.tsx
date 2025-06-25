@@ -19,7 +19,7 @@ export default function VoiceSearch() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-8">
         <div className="mb-8">
           <Link href="/">
             <Button variant="ghost" className="mb-4 hover:bg-muted">
@@ -67,11 +67,11 @@ export default function VoiceSearch() {
                 </div>
               )}
 
-              <div className="text-sm text-muted-foreground space-y-2">
-                <p><strong>Try saying:</strong></p>
-                <p>"I need a black leather jacket"</p>
-                <p>"Show me wireless headphones under $100"</p>
-                <p>"Find running shoes for women"</p>
+              <div className="text-sm text-foreground/80 space-y-2 bg-muted/30 p-4 rounded-lg border border-border/50">
+                <p className="font-semibold text-foreground"><strong>Try saying:</strong></p>
+                <p className="text-muted-foreground">"I need a black leather jacket"</p>
+                <p className="text-muted-foreground">"Show me wireless headphones under $100"</p>
+                <p className="text-muted-foreground">"Find running shoes for women"</p>
               </div>
             </CardContent>
           </Card>
