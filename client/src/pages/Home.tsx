@@ -158,9 +158,7 @@ export default function Home() {
               </Link>
               <Link href="/image-upload">
                 <Button 
-                  variant="outline"
-                  className="border-2 border-white hover:bg-white/10 hover:border-white text-white hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-                  style={{ color: 'white', borderColor: 'white' }}
+                  className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
                 >
                   Upload Image
                 </Button>
