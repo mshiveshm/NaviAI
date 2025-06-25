@@ -16,11 +16,17 @@ export default function Header() {
       <nav className="max-w-full mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center shadow-lg">
-              <Lightbulb className="w-6 h-6 text-white" />
+            <div className="w-8 h-8 text-primary flex items-center justify-center">
+              <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 14h24v18a2 2 0 01-2 2H10a2 2 0 01-2-2V14z" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+                <path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+                <circle cx="20" cy="22" r="2.5" fill="currentColor"/>
+                <circle cx="20" cy="22" r="5" stroke="currentColor" strokeWidth="1.8" fill="none" opacity="0.6"/>
+                <circle cx="20" cy="22" r="7.5" stroke="currentColor" strokeWidth="1.2" fill="none" opacity="0.4"/>
+              </svg>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">NaviAI</h1>
+              <h1 className="text-xl font-bold text-foreground">NaviAI</h1>
               <p className="text-sm text-muted-foreground hidden sm:block">Intelligent Shopping Assistant</p>
             </div>
           </Link>
