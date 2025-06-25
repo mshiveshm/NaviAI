@@ -46,9 +46,8 @@ export default function Home() {
                 Assistance
               </h1>
               <p className="text-xl text-muted-foreground mb-6 max-w-5xl mx-auto leading-relaxed">
-                Transform your shopping experience with cutting-edge artificial intelligence. NaviAI understands your needs through natural conversation, 
-                instantly recognizes products from photos, and responds to voice commands with precision. Say goodbye to endless scrolling and 
-                hello to intelligent product discovery that saves you time and finds exactly what you're looking for.
+                Transform your shopping experience with cutting-edge artificial intelligence. Discover products through voice search, 
+                image recognition, and smart conversations with our AI assistant.
               </p>
               
               {/* Key Features Grid */}

@@ -42,7 +42,6 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-6">
             <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
             <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
-            <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</Link>
             <ThemeToggle />
             <Link href="/voice-search">
               <Button 
@@ -74,7 +73,6 @@ export default function Header() {
             <div className="flex flex-col space-y-4">
               <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
               <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
-              <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</Link>
               <Link href="/voice-search">
                 <Button className="gradient-primary text-white w-fit px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform">
                   Get Started

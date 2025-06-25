@@ -46,7 +46,6 @@ export default function Footer() {
             </div>
             <div className="text-sm text-muted-foreground">
               <p className="mb-2">📧 hello@naviai.com</p>
-              <p className="mb-2">📞 +1 (555) 123-4567</p>
               <p>📍 San Francisco, CA</p>
             </div>
           </div>
@@ -84,7 +83,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Press Kit</a></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Help Center</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
             </ul>

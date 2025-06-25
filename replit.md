@@ -115,13 +115,13 @@ NaviAI is a full-stack web application that provides AI-powered shopping assista
 
 ## Recent Changes
 
+- **Simplified Navigation** (June 25, 2025): Removed Contact page, simplified hero section description for better clarity
+- **Layout Consistency** (June 25, 2025): Applied uniform spacing and margins across About and Contact pages
 - **Enhanced Hero Section** (June 25, 2025): Added comprehensive AI shopping features showcase with stats, feature grid, and expanded content
 - **Logo Refinement** (June 25, 2025): Improved logo design with shopping bag and neural network elements, added AI signal waves
 - **Vertical Spacing Optimization** (June 25, 2025): Reduced excessive padding throughout application for more compact layout
 - **Enhanced Footer** (June 25, 2025): Expanded footer with wider margins, comprehensive links, and contact information
 - **Custom Logo Design** (June 25, 2025): Created modern minimalistic logo combining shopping bag with AI signal waves
-- **Layout Optimization** (June 25, 2025): Reduced excessive margins and improved screen space utilization across all pages
-- **Navigation Enhancement** (June 25, 2025): Fixed About and Contact page routing with comprehensive content
 
 ## Changelog
 
