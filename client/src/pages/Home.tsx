@@ -36,21 +36,21 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section className="relative gradient-card py-12 sm:py-16 lg:py-20">
+        <section className="relative gradient-card py-8 sm:py-12 lg:py-16">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:to-primary/5" />
           <div className="relative max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Shop Smarter with{" "}
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">AI-Powered</span>{" "}
                 Assistance
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
                 Experience the future of shopping with NaviAI. Find products instantly using voice commands, 
                 image recognition, or natural conversation. Shopping has never been this intuitive.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
                 <Link href="/voice-search">
                   <Button 
                     className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
@@ -74,10 +74,10 @@ export default function Home() {
         </section>
 
         {/* Primary Features Section */}
-        <section className="py-12 sm:py-16 bg-muted/50" id="features">
+        <section className="py-8 sm:py-12 bg-muted/50" id="features">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
                 Three Ways to Shop Intelligently
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -117,10 +117,10 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-12 sm:py-16 bg-background">
+        <section className="py-8 sm:py-12 bg-background">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
                 Why Choose NaviAI?
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -142,12 +142,12 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-12 sm:py-16 gradient-primary">
+        <section className="py-8 sm:py-12 gradient-primary">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get Started Free
             </h2>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 mb-6 leading-relaxed max-w-3xl mx-auto">
               Join thousands of satisfied customers who've revolutionized their shopping with NaviAI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

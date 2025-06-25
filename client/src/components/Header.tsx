@@ -18,16 +18,19 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-8 h-8 text-primary flex items-center justify-center">
               <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16c0-4.4 3.6-8 8-8s8 3.6 8 8c0 2.2-0.9 4.2-2.3 5.7" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-                <path d="M10.3 21.7c-1.4-1.5-2.3-3.5-2.3-5.7 0-4.4 3.6-8 8-8" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity="0.7"/>
-                <rect x="14" y="26" width="12" height="8" rx="1" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <path d="M16 26v-2a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <circle cx="20" cy="16" r="2" fill="currentColor"/>
-                <circle cx="15" cy="19" r="1.5" fill="currentColor" opacity="0.8"/>
-                <circle cx="25" cy="19" r="1.5" fill="currentColor" opacity="0.8"/>
-                <path d="M18.5 17.5L16.5 18.5" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
-                <path d="M21.5 17.5L23.5 18.5" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
-                <path d="M20 18v6" stroke="currentColor" strokeWidth="1.5" opacity="0.4" strokeLinecap="round"/>
+                <path d="M8 15h24v16a3 3 0 01-3 3H11a3 3 0 01-3-3V15z" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinejoin="round"/>
+                <path d="M14 15V11a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+                <circle cx="20" cy="23" r="3" fill="currentColor" opacity="0.9"/>
+                <circle cx="16" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                <circle cx="24" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                <circle cx="16" cy="26" r="1.5" fill="currentColor" opacity="0.7"/>
+                <circle cx="24" cy="26" r="1.5" fill="currentColor" opacity="0.7"/>
+                <path d="M17.2 21.2L18.8 21.8" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                <path d="M22.8 21.2L21.2 21.8" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                <path d="M17.2 24.8L18.8 24.2" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                <path d="M22.8 24.8L21.2 24.2" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                <path d="M17 7c1.5-2 4.5-2 6 0" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5" strokeLinecap="round"/>
+                <path d="M15 5c2.5-3 7.5-3 10 0" stroke="currentColor" strokeWidth="1.2" fill="none" opacity="0.3" strokeLinecap="round"/>
               </svg>
             </div>
             <div>
