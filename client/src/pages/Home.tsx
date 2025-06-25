@@ -45,10 +45,58 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">AI-Powered</span>{" "}
                 Assistance
               </h1>
-              <p className="text-xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
-                Experience the future of shopping with NaviAI. Find products instantly using voice commands, 
-                image recognition, or natural conversation. Shopping has never been this intuitive.
+              <p className="text-xl text-muted-foreground mb-6 max-w-5xl mx-auto leading-relaxed">
+                Transform your shopping experience with cutting-edge artificial intelligence. NaviAI understands your needs through natural conversation, 
+                instantly recognizes products from photos, and responds to voice commands with precision. Say goodbye to endless scrolling and 
+                hello to intelligent product discovery that saves you time and finds exactly what you're looking for.
               </p>
+              
+              {/* Key Features Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Mic className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Voice Shopping</h3>
+                  <p className="text-sm text-muted-foreground">Simply speak what you need. Our AI understands natural language and context.</p>
+                </div>
+                
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Camera className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Visual Search</h3>
+                  <p className="text-sm text-muted-foreground">Upload any image and find similar or exact products instantly across thousands of stores.</p>
+                </div>
+                
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <MessageCircle className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Smart Chat</h3>
+                  <p className="text-sm text-muted-foreground">Get personalized recommendations and shopping advice from our intelligent assistant.</p>
+                </div>
+              </div>
+
+              {/* Stats */}
+              <div className="flex flex-wrap justify-center gap-8 mb-8 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-primary">98.5%</div>
+                  <div className="text-sm text-muted-foreground">Accuracy Rate</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-primary">50M+</div>
+                  <div className="text-sm text-muted-foreground">Products Indexed</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-primary">3 sec</div>
+                  <div className="text-sm text-muted-foreground">Average Response</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-primary">24/7</div>
+                  <div className="text-sm text-muted-foreground">AI Availability</div>
+                </div>
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
                 <Link href="/voice-search">
@@ -69,6 +117,10 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
+              
+              <p className="text-sm text-muted-foreground">
+                Join over 100,000+ users who trust NaviAI for their shopping needs • Free to get started
+              </p>
             </div>
           </div>
         </section>
