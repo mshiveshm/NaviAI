@@ -37,17 +37,17 @@ export default function About() {
       
       <main>
         {/* Hero Section */}
-        <section className="gradient-card py-8 sm:py-12 lg:py-16">
+        <section className="gradient-card py-6 sm:py-8 lg:py-12">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center">
-              <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">About NaviAI</Badge>
-              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+              <Badge className="mb-3 bg-primary/10 text-primary border-primary/20">About NaviAI</Badge>
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-3">
                 Revolutionizing Shopping with{" "}
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                   Artificial Intelligence
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-4 max-w-4xl mx-auto leading-relaxed">
                 We're on a mission to make online shopping as intuitive as having a conversation with a knowledgeable friend.
                 Our AI-powered platform transforms how people discover and find products.
               </p>
@@ -56,7 +56,7 @@ export default function About() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-8 sm:py-12 bg-muted/50">
+        <section className="py-6 sm:py-8 bg-muted/50">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -73,7 +73,7 @@ export default function About() {
         </section>
 
         {/* Story Section */}
-        <section className="py-8 sm:py-12 bg-background">
+        <section className="py-6 sm:py-8 bg-background">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -112,10 +112,10 @@ export default function About() {
         </section>
 
         {/* Team Section */}
-        <section className="py-8 sm:py-12 bg-muted/50">
+        <section className="py-6 sm:py-8 bg-muted/50">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">Meet Our Team</h2>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">Meet Our Team</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Passionate experts in AI, product design, and e-commerce, working together to transform shopping.
               </p>
@@ -139,12 +139,12 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 sm:py-12 gradient-primary">
+        <section className="py-6 sm:py-8 gradient-primary">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
               Ready to Experience the Future of Shopping?
             </h2>
-            <p className="text-xl text-white/80 mb-6 leading-relaxed">
+            <p className="text-xl text-white/80 mb-4 leading-relaxed">
               Join thousands who have already transformed their shopping experience with NaviAI.
             </p>
             <Button className="bg-white hover:bg-white/90 text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl">

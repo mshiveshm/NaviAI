@@ -36,49 +36,49 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section className="relative gradient-card py-8 sm:py-12 lg:py-16">
+        <section className="relative gradient-card py-6 sm:py-8 lg:py-12">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:to-primary/5" />
           <div className="relative max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-3">
                 Shop Smarter with{" "}
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">AI-Powered</span>{" "}
                 Assistance
               </h1>
-              <p className="text-xl text-muted-foreground mb-6 max-w-5xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-4 max-w-5xl mx-auto leading-relaxed">
                 Transform your shopping experience with cutting-edge artificial intelligence. Discover products through voice search, 
                 image recognition, and smart conversations with our AI assistant.
               </p>
               
               {/* Key Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
-                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
-                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Mic className="w-6 h-6 text-primary" />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 max-w-4xl mx-auto">
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                  <div className="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+                    <Mic className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Voice Shopping</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Voice Shopping</h3>
                   <p className="text-sm text-muted-foreground">Simply speak what you need. Our AI understands natural language and context.</p>
                 </div>
                 
-                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
-                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Camera className="w-6 h-6 text-primary" />
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                  <div className="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+                    <Camera className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Visual Search</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Visual Search</h3>
                   <p className="text-sm text-muted-foreground">Upload any image and find similar or exact products instantly across thousands of stores.</p>
                 </div>
                 
-                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-6 border border-border/50">
-                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <MessageCircle className="w-6 h-6 text-primary" />
+                <div className="bg-background/60 dark:bg-background/40 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                  <div className="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+                    <MessageCircle className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Smart Chat</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Smart Chat</h3>
                   <p className="text-sm text-muted-foreground">Get personalized recommendations and shopping advice from our intelligent assistant.</p>
                 </div>
               </div>
 
               {/* Stats */}
-              <div className="flex flex-wrap justify-center gap-8 mb-8 text-center">
+              <div className="flex flex-wrap justify-center gap-6 mb-6 text-center">
                 <div>
                   <div className="text-2xl font-bold text-primary">98.5%</div>
                   <div className="text-sm text-muted-foreground">Accuracy Rate</div>
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
                 <Link href="/voice-search">
                   <Button 
                     className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
@@ -125,10 +125,10 @@ export default function Home() {
         </section>
 
         {/* Primary Features Section */}
-        <section className="py-8 sm:py-12 bg-muted/50" id="features">
+        <section className="py-6 sm:py-8 bg-muted/50" id="features">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
                 Three Ways to Shop Intelligently
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -168,10 +168,10 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-8 sm:py-12 bg-background">
+        <section className="py-6 sm:py-8 bg-background">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
                 Why Choose NaviAI?
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -193,12 +193,12 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-8 sm:py-12 gradient-primary">
+        <section className="py-6 sm:py-8 gradient-primary">
           <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
               Get Started Free
             </h2>
-            <p className="text-xl text-white/80 mb-6 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 mb-4 leading-relaxed max-w-3xl mx-auto">
               Join thousands of satisfied customers who've revolutionized their shopping with NaviAI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
