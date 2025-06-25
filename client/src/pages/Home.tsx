@@ -36,21 +36,21 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section className="relative gradient-card py-16 sm:py-24 lg:py-32">
+        <section className="relative gradient-card py-12 sm:py-16 lg:py-20">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:to-primary/5" />
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Shop Smarter with{" "}
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">AI-Powered</span>{" "}
                 Assistance
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
                 Experience the future of shopping with NaviAI. Find products instantly using voice commands, 
                 image recognition, or natural conversation. Shopping has never been this intuitive.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <Link href="/voice-search">
                   <Button 
                     className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
@@ -74,18 +74,18 @@ export default function Home() {
         </section>
 
         {/* Primary Features Section */}
-        <section className="py-16 sm:py-24 bg-muted/50" id="features">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+        <section className="py-12 sm:py-16 bg-muted/50" id="features">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Three Ways to Shop Intelligently
               </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Choose your preferred method to discover and find products with the power of AI
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               <FeatureCard
                 icon={Mic}
                 title="Voice Search"
@@ -117,18 +117,18 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 sm:py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+        <section className="py-12 sm:py-16 bg-background">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Why Choose NaviAI?
               </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Experience shopping like never before with cutting-edge AI technology
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {benefits.map((benefit, index) => (
                 <BenefitCard
                   key={index}
@@ -142,26 +142,26 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-16 sm:py-24 gradient-primary">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-12 sm:py-16 gradient-primary">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Shopping Experience?
+              Get Started Free
             </h2>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed">
+            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-3xl mx-auto">
               Join thousands of satisfied customers who've revolutionized their shopping with NaviAI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/voice-search">
                 <Button className="bg-white hover:bg-white/90 text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary shadow-xl hover:shadow-2xl">
-                  Get Started Free
+                  Start Voice Search
                 </Button>
               </Link>
-              <Link href="/about">
+              <Link href="/image-upload">
                 <Button 
                   variant="outline"
                   className="border-2 border-white/50 hover:bg-white/10 hover:border-white text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
                 >
-                  Learn More
+                  Upload Image
                 </Button>
               </Link>
             </div>
