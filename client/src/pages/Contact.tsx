@@ -62,17 +62,17 @@ export default function Contact() {
       
       <main>
         {/* Hero Section */}
-        <section className="gradient-card py-16 sm:py-24">
-          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        <section className="gradient-card py-8 sm:py-12 lg:py-16">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center">
               <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Contact Us</Badge>
-              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
                 Get in{" "}
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                   Touch
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
                 Have questions about NaviAI? Want to share feedback? We'd love to hear from you. 
                 Our team is here to help and always ready to chat.
               </p>
@@ -81,8 +81,8 @@ export default function Contact() {
         </section>
 
         {/* Contact Info Grid */}
-        <section className="py-16 bg-muted/50">
-          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        <section className="py-8 sm:py-12 bg-muted/50">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {contactInfo.map((info, index) => (
                 <Card key={index} className="gradient-card border-border text-center p-6 hover-lift">
@@ -101,10 +101,10 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-16 sm:py-24 bg-background">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Send us a Message</h2>
+        <section className="py-8 sm:py-12 bg-background">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">Send us a Message</h2>
               <p className="text-xl text-muted-foreground">
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
@@ -195,14 +195,14 @@ export default function Contact() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-muted/50">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
+        <section className="py-8 sm:py-12 bg-muted/50">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
               <p className="text-muted-foreground">Quick answers to common questions</p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               <Card className="gradient-card border-border">
                 <CardHeader>
                   <CardTitle className="text-lg text-foreground">How accurate is NaviAI's product recognition?</CardTitle>
