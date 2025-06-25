@@ -38,7 +38,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative gradient-card py-12 sm:py-16 lg:py-20">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:to-primary/5" />
-          <div className="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="relative max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Shop Smarter with{" "}
@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* Primary Features Section */}
         <section className="py-12 sm:py-16 bg-muted/50" id="features">
-          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Three Ways to Shop Intelligently
@@ -118,7 +118,7 @@ export default function Home() {
 
         {/* Benefits Section */}
         <section className="py-12 sm:py-16 bg-background">
-          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Why Choose NaviAI?
@@ -143,7 +143,7 @@ export default function Home() {
 
         {/* Call to Action Section */}
         <section className="py-12 sm:py-16 gradient-primary">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Get Started Free
             </h2>

@@ -11,11 +11,16 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 text-primary flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 14h24v18a2 2 0 01-2 2H10a2 2 0 01-2-2V14z" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-                  <path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-                  <circle cx="20" cy="22" r="2.5" fill="currentColor"/>
-                  <circle cx="20" cy="22" r="5" stroke="currentColor" strokeWidth="1.8" fill="none" opacity="0.6"/>
-                  <circle cx="20" cy="22" r="7.5" stroke="currentColor" strokeWidth="1.2" fill="none" opacity="0.4"/>
+                  <path d="M12 16c0-4.4 3.6-8 8-8s8 3.6 8 8c0 2.2-0.9 4.2-2.3 5.7" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+                  <path d="M10.3 21.7c-1.4-1.5-2.3-3.5-2.3-5.7 0-4.4 3.6-8 8-8" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity="0.7"/>
+                  <rect x="14" y="26" width="12" height="8" rx="1" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M16 26v-2a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <circle cx="20" cy="16" r="2" fill="currentColor"/>
+                  <circle cx="15" cy="19" r="1.5" fill="currentColor" opacity="0.8"/>
+                  <circle cx="25" cy="19" r="1.5" fill="currentColor" opacity="0.8"/>
+                  <path d="M18.5 17.5L16.5 18.5" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                  <path d="M21.5 17.5L23.5 18.5" stroke="currentColor" strokeWidth="1.5" opacity="0.6" strokeLinecap="round"/>
+                  <path d="M20 18v6" stroke="currentColor" strokeWidth="1.5" opacity="0.4" strokeLinecap="round"/>
                 </svg>
               </div>
               <div>
@@ -80,26 +85,6 @@ export default function Footer() {
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
             </ul>
-          </div>
-        </div>
-        
-        {/* Newsletter Section */}
-        <div className="border-t border-border mt-12 pt-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">Stay Updated</h4>
-              <p className="text-muted-foreground">Get the latest updates on new features and shopping insights.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-              />
-              <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
           </div>
         </div>
         
