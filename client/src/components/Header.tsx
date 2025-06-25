@@ -26,16 +26,18 @@ export default function Header() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</a>
+            <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
+            <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
+            <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</Link>
             <ThemeToggle />
-            <Button 
-              className="gradient-primary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-lg hover:shadow-xl" 
-              aria-label="Get started with NaviAI"
-            >
-              Get Started
-            </Button>
+            <Link href="/voice-search">
+              <Button 
+                className="gradient-primary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-lg hover:shadow-xl" 
+                aria-label="Get started with NaviAI"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
           
           <div className="md:hidden flex items-center space-x-2">
@@ -56,12 +58,14 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <a href="#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
-              <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</a>
-              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</a>
-              <Button className="gradient-primary text-white w-fit px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform">
-                Get Started
-              </Button>
+              <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
+              <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
+              <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</Link>
+              <Link href="/voice-search">
+                <Button className="gradient-primary text-white w-fit px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         )}

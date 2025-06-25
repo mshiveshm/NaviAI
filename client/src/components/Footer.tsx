@@ -1,5 +1,6 @@
 import { Lightbulb } from "lucide-react";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -29,20 +30,20 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Features</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Voice Search</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Image Recognition</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">AI Chat Assistant</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Smart Recommendations</a></li>
+              <li><Link href="/voice-search" className="hover:text-primary transition-colors">Voice Search</Link></li>
+              <li><Link href="/image-upload" className="hover:text-primary transition-colors">Image Recognition</Link></li>
+              <li><Link href="/chat" className="hover:text-primary transition-colors">AI Chat Assistant</Link></li>
+              <li><a href="/#features" className="hover:text-primary transition-colors">Smart Recommendations</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Company</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+              <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
         </div>

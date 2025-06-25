@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
@@ -50,19 +51,23 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <Button 
-                  className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
-                  aria-label="Start shopping with NaviAI"
-                >
-                  Start Shopping Now
-                </Button>
-                <Button 
-                  variant="outline"
-                  className="border-2 border-border hover:border-primary text-foreground hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:shadow-lg" 
-                  aria-label="Watch NaviAI demo"
-                >
-                  Watch Demo
-                </Button>
+                <Link href="/voice-search">
+                  <Button 
+                    className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
+                    aria-label="Start shopping with NaviAI"
+                  >
+                    Start Shopping Now
+                  </Button>
+                </Link>
+                <Link href="/about">
+                  <Button 
+                    variant="outline"
+                    className="border-2 border-border hover:border-primary text-foreground hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:shadow-lg" 
+                    aria-label="Learn more about NaviAI"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -146,15 +151,19 @@ export default function Home() {
               Join thousands of satisfied customers who've revolutionized their shopping with NaviAI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white hover:bg-white/90 text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary shadow-xl hover:shadow-2xl">
-                Get Started Free
-              </Button>
-              <Button 
-                variant="outline"
-                className="border-2 border-white/50 hover:bg-white/10 hover:border-white text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-              >
-                Learn More
-              </Button>
+              <Link href="/voice-search">
+                <Button className="bg-white hover:bg-white/90 text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary shadow-xl hover:shadow-2xl">
+                  Get Started Free
+                </Button>
+              </Link>
+              <Link href="/about">
+                <Button 
+                  variant="outline"
+                  className="border-2 border-white/50 hover:bg-white/10 hover:border-white text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
