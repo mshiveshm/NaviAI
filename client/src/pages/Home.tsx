@@ -30,34 +30,35 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <Header />
       
       <main>
         {/* Hero Section */}
-        <section className="relative bg-white py-16 sm:py-24 lg:py-32">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative gradient-card py-16 sm:py-24 lg:py-32">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:to-primary/5" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Shop Smarter with{" "}
-                <span className="text-brand-blue-500">AI-Powered</span>{" "}
+                <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">AI-Powered</span>{" "}
                 Assistance
               </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
                 Experience the future of shopping with NaviAI. Find products instantly using voice commands, 
                 image recognition, or natural conversation. Shopping has never been this intuitive.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                 <Button 
-                  className="bg-brand-blue-500 hover:bg-brand-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:ring-offset-2 shadow-lg hover:shadow-xl" 
+                  className="gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-xl" 
                   aria-label="Start shopping with NaviAI"
                 >
                   Start Shopping Now
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-gray-300 hover:border-brand-blue-500 text-gray-700 hover:text-brand-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:ring-offset-2" 
+                  className="border-2 border-border hover:border-primary text-foreground hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:shadow-lg" 
                   aria-label="Watch NaviAI demo"
                 >
                   Watch Demo
@@ -68,13 +69,13 @@ export default function Home() {
         </section>
 
         {/* Primary Features Section */}
-        <section className="py-16 sm:py-24 bg-gray-50" id="features">
+        <section className="py-16 sm:py-24 bg-muted/50" id="features">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Three Ways to Shop Intelligently
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Choose your preferred method to discover and find products with the power of AI
               </p>
             </div>
@@ -111,13 +112,13 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 sm:py-24 bg-white">
+        <section className="py-16 sm:py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Why Choose NaviAI?
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Experience shopping like never before with cutting-edge AI technology
               </p>
             </div>
@@ -136,21 +137,21 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-16 sm:py-24 bg-brand-blue-500">
+        <section className="py-16 sm:py-24 gradient-primary">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Shopping Experience?
             </h2>
-            <p className="text-xl text-brand-blue-100 mb-8 leading-relaxed">
+            <p className="text-xl text-white/80 mb-8 leading-relaxed">
               Join thousands of satisfied customers who've revolutionized their shopping with NaviAI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white hover:bg-gray-50 text-brand-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-blue-500 shadow-lg">
+              <Button className="bg-white hover:bg-white/90 text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary shadow-xl hover:shadow-2xl">
                 Get Started Free
               </Button>
               <Button 
                 variant="outline"
-                className="border-2 border-white hover:bg-white hover:text-brand-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-blue-500"
+                className="border-2 border-white/50 hover:bg-white/10 hover:border-white text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
               >
                 Learn More
               </Button>

@@ -51,32 +51,32 @@ export default function ImageUpload() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-8">
           <Link href="/">
-            <Button variant="ghost" className="mb-4">
+            <Button variant="ghost" className="mb-4 hover:bg-muted">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Image Upload</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold text-foreground mb-4">Image Upload</h1>
+          <p className="text-xl text-muted-foreground">
             Upload or take a photo to find similar products instantly
           </p>
         </div>
 
         <div className="grid gap-8">
-          <Card className="p-8">
+          <Card className="gradient-card p-8 border-border shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl mb-4">Upload Product Image</CardTitle>
+              <CardTitle className="text-2xl mb-4 text-foreground">Upload Product Image</CardTitle>
             </CardHeader>
             <CardContent>
               <div
-                className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
+                className={`border-2 border-dashed rounded-lg p-8 text-center transition-all duration-300 ${
                   dragActive 
-                    ? 'border-brand-blue-500 bg-brand-blue-50' 
-                    : 'border-gray-300 hover:border-brand-blue-400'
+                    ? 'border-primary bg-primary/5 scale-105' 
+                    : 'border-border hover:border-primary/50 hover:bg-muted/50'
                 }`}
                 onDragEnter={handleDrag}
                 onDragLeave={handleDrag}
@@ -91,30 +91,30 @@ export default function ImageUpload() {
                       className="max-w-xs max-h-64 mx-auto rounded-lg shadow-md"
                     />
                     <div>
-                      <p className="text-green-600 font-medium mb-2">Image uploaded successfully!</p>
+                      <p className="text-green-600 dark:text-green-400 font-medium mb-2">Image uploaded successfully!</p>
                       <Button
                         onClick={() => setUploadedImage(null)}
                         variant="outline"
-                        className="mr-2"
+                        className="mr-2 border-border hover:border-primary"
                       >
                         Upload Different Image
                       </Button>
-                      <Button className="bg-brand-blue-500 hover:bg-brand-blue-600">
+                      <Button className="gradient-primary text-white hover:scale-105 transition-transform">
                         Find Similar Products
                       </Button>
                     </div>
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    <Upload className="w-16 h-16 text-gray-400 mx-auto" />
+                    <Upload className="w-16 h-16 text-muted-foreground mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-700 mb-2">
+                      <p className="text-lg font-medium text-foreground mb-2">
                         Drag and drop your image here
                       </p>
-                      <p className="text-gray-500 mb-4">or</p>
+                      <p className="text-muted-foreground mb-4">or</p>
                       <Button
                         onClick={onButtonClick}
-                        className="bg-brand-blue-500 hover:bg-brand-blue-600 mr-4"
+                        className="gradient-primary text-white mr-4 hover:scale-105 transition-transform shadow-lg"
                       >
                         <Upload className="w-4 h-4 mr-2" />
                         Choose File
@@ -122,12 +122,13 @@ export default function ImageUpload() {
                       <Button
                         variant="outline"
                         onClick={onButtonClick}
+                        className="border-border hover:border-primary"
                       >
                         <Camera className="w-4 h-4 mr-2" />
                         Take Photo
                       </Button>
                     </div>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-muted-foreground">
                       Supports: JPG, PNG, GIF (Max 10MB)
                     </p>
                   </div>

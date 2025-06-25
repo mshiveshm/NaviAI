@@ -18,25 +18,25 @@ export default function VoiceSearch() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-8">
           <Link href="/">
-            <Button variant="ghost" className="mb-4">
+            <Button variant="ghost" className="mb-4 hover:bg-muted">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Voice Search</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold text-foreground mb-4">Voice Search</h1>
+          <p className="text-xl text-muted-foreground">
             Speak naturally to find the products you're looking for
           </p>
         </div>
 
         <div className="grid gap-8">
-          <Card className="p-8 text-center">
+          <Card className="gradient-card p-8 text-center border-border shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl mb-4">Start Voice Search</CardTitle>
+              <CardTitle className="text-2xl mb-4 text-foreground">Start Voice Search</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="mb-8">
@@ -45,8 +45,8 @@ export default function VoiceSearch() {
                   className={`w-32 h-32 rounded-full flex items-center justify-center transition-all duration-300 ${
                     isListening 
                       ? 'bg-red-500 hover:bg-red-600 animate-pulse' 
-                      : 'bg-brand-blue-500 hover:bg-brand-blue-600'
-                  } text-white shadow-lg hover:shadow-xl transform hover:scale-105`}
+                      : 'gradient-primary hover:scale-110'
+                  } text-white shadow-xl hover:shadow-2xl transform hover:scale-105`}
                   aria-label={isListening ? "Stop listening" : "Start listening"}
                 >
                   {isListening ? (
@@ -57,17 +57,17 @@ export default function VoiceSearch() {
                 </button>
               </div>
               
-              <p className="text-lg font-medium text-gray-700 mb-4">
+              <p className="text-lg font-medium text-foreground mb-4">
                 {isListening ? "Listening..." : "Click the microphone to start"}
               </p>
               
               {transcript && (
-                <div className="bg-gray-100 rounded-lg p-4 mb-6">
-                  <p className="text-gray-800">{transcript}</p>
+                <div className="bg-muted rounded-lg p-4 mb-6 border border-border">
+                  <p className="text-foreground">{transcript}</p>
                 </div>
               )}
 
-              <div className="text-sm text-gray-500 space-y-2">
+              <div className="text-sm text-muted-foreground space-y-2">
                 <p><strong>Try saying:</strong></p>
                 <p>"I need a black leather jacket"</p>
                 <p>"Show me wireless headphones under $100"</p>
@@ -76,38 +76,38 @@ export default function VoiceSearch() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="gradient-card border-border shadow-lg">
             <CardHeader>
-              <CardTitle>How Voice Search Works</CardTitle>
+              <CardTitle className="text-foreground">How Voice Search Works</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-brand-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-brand-blue-600 font-semibold">1</span>
+                <div className="w-8 h-8 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-semibold">1</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Speak Naturally</h3>
-                  <p className="text-gray-600">Describe what you're looking for in your own words</p>
+                  <h3 className="font-semibold text-foreground">Speak Naturally</h3>
+                  <p className="text-muted-foreground">Describe what you're looking for in your own words</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-brand-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-brand-blue-600 font-semibold">2</span>
+                <div className="w-8 h-8 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-semibold">2</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">AI Processing</h3>
-                  <p className="text-gray-600">Our AI understands context, preferences, and intent</p>
+                  <h3 className="font-semibold text-foreground">AI Processing</h3>
+                  <p className="text-muted-foreground">Our AI understands context, preferences, and intent</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-brand-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-brand-blue-600 font-semibold">3</span>
+                <div className="w-8 h-8 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-semibold">3</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Get Results</h3>
-                  <p className="text-gray-600">Receive personalized product recommendations</p>
+                  <h3 className="font-semibold text-foreground">Get Results</h3>
+                  <p className="text-muted-foreground">Receive personalized product recommendations</p>
                 </div>
               </div>
             </CardContent>

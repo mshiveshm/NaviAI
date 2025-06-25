@@ -58,25 +58,25 @@ export default function Chat() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-8">
           <Link href="/">
-            <Button variant="ghost" className="mb-4">
+            <Button variant="ghost" className="mb-4 hover:bg-muted">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Chat with AI</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold text-foreground mb-4">Chat with AI</h1>
+          <p className="text-xl text-muted-foreground">
             Have a conversation with our intelligent shopping assistant
           </p>
         </div>
 
         <div className="grid gap-8">
-          <Card className="h-96 flex flex-col">
+          <Card className="h-96 flex flex-col gradient-card border-border shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl">AI Shopping Assistant</CardTitle>
+              <CardTitle className="text-2xl text-foreground">AI Shopping Assistant</CardTitle>
             </CardHeader>
             <CardContent className="flex-1 flex flex-col">
               <div className="flex-1 overflow-y-auto space-y-4 mb-4">
@@ -88,22 +88,22 @@ export default function Chat() {
                     }`}
                   >
                     {!message.isUser && (
-                      <div className="w-8 h-8 bg-brand-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Bot className="w-4 h-4 text-brand-blue-600" />
+                      <div className="w-8 h-8 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Bot className="w-4 h-4 text-primary" />
                       </div>
                     )}
                     <div
-                      className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
+                      className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg transition-all duration-200 ${
                         message.isUser
-                          ? 'bg-brand-blue-500 text-white'
-                          : 'bg-gray-100 text-gray-900'
+                          ? 'gradient-primary text-white shadow-lg'
+                          : 'bg-muted border border-border text-foreground'
                       }`}
                     >
                       <p className="text-sm">{message.text}</p>
                     </div>
                     {message.isUser && (
-                      <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-                        <User className="w-4 h-4 text-gray-600" />
+                      <div className="w-8 h-8 bg-muted border border-border rounded-full flex items-center justify-center flex-shrink-0">
+                        <User className="w-4 h-4 text-muted-foreground" />
                       </div>
                     )}
                   </div>
@@ -116,11 +116,11 @@ export default function Chat() {
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={handleKeyPress}
                   placeholder="Type your message..."
-                  className="flex-1"
+                  className="flex-1 bg-background border-border focus:border-primary"
                 />
                 <Button
                   onClick={handleSendMessage}
-                  className="bg-brand-blue-500 hover:bg-brand-blue-600"
+                  className="gradient-primary text-white hover:scale-105 transition-transform shadow-lg"
                   disabled={!inputValue.trim()}
                 >
                   <Send className="w-4 h-4" />

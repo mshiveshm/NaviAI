@@ -113,10 +113,18 @@ NaviAI is a full-stack web application that provides AI-powered shopping assista
 - **Database**: Ready for PostgreSQL with Neon serverless
 - **Monitoring**: Request logging and error tracking
 
+## Recent Changes
+
+- **Enhanced Design System** (June 25, 2025): Implemented comprehensive dark/light theme system with improved color palette
+- **Theme Toggle Feature** (June 25, 2025): Added theme switcher with light, dark, and system modes
+- **Visual Improvements** (June 25, 2025): Enhanced gradients, hover effects, and animations throughout the UI
+- **Color Accessibility** (June 25, 2025): Improved contrast ratios and semantic color usage for better accessibility
+
 ## Changelog
 
 ```
 Changelog:
+- June 25, 2025. Enhanced design with dark/light theme system
 - June 25, 2025. Initial setup
 ```
 
@@ -124,4 +132,5 @@ Changelog:
 
 ```
 Preferred communication style: Simple, everyday language.
+Design preferences: Modern, clean aesthetic with dark/light theme support and enhanced colors.
 ```
