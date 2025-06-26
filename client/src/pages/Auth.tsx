@@ -151,7 +151,7 @@ export default function Auth() {
         <Card className="shadow-lg">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              {isLogin ? "Welcome Back – Sign In" : "Create Account – Sign Up"}
+              {isLogin ? "Welcome Back" : "Create Account"}
             </CardTitle>
             <CardDescription>
               {isLogin 
