@@ -2,7 +2,12 @@ import mongoose from "mongoose";
 
 const connectDB = async (): Promise<void> => {
   try {
-    const mongoURI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/naviai";
+    const mongoURI = process.env.MONGODB_URI;
+    
+    if (!mongoURI) {
+      console.log("No MONGODB_URI provided - skipping MongoDB connection, using in-memory storage");
+      return;
+    }
     
     const conn = await mongoose.connect(mongoURI, {
       serverSelectionTimeoutMS: 5000,
