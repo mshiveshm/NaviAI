@@ -43,7 +43,7 @@ export default function Header() {
             <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
             <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
             <ThemeToggle />
-            <Link href="/voice-search">
+            <Link href="/auth">
               <Button 
                 className="gradient-primary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-lg hover:shadow-xl" 
                 aria-label="Get started with NaviAI"
@@ -73,7 +73,7 @@ export default function Header() {
             <div className="flex flex-col space-y-4">
               <a href="/#features" className="text-muted-foreground hover:text-primary transition-colors font-medium">Features</a>
               <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
-              <Link href="/voice-search">
+              <Link href="/auth">
                 <Button className="gradient-primary text-white w-fit px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform">
                   Get Started
                 </Button>
