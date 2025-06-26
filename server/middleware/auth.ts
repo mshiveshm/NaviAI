@@ -24,10 +24,7 @@ export const verifyToken = async (req: AuthRequest, res: Response, next: NextFun
     }
 
     const decoded = jwt.verify(token, JWT_SECRET) as { userId: string };
-    console.log("Decoded token:", decoded);
-    
     const user = await authStorage.findUserById(decoded.userId);
-    console.log("Found user:", user ? "Yes" : "No");
 
     if (!user) {
       res.status(401).json({ message: "Token is not valid" });
