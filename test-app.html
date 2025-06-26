@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test App</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Test Application</h1>
+        <p>If you can see this, the server is working correctly.</p>
+        <script>
+            console.log('Test script loaded successfully');
+            fetch('/api/test')
+                .then(response => {
+                    console.log('API response status:', response.status);
+                    return response.text();
+                })
+                .then(data => {
+                    console.log('API response data:', data);
+                })
+                .catch(error => {
+                    console.error('API fetch error:', error);
+                });
+        </script>
+    </div>
+</body>
+</html>
