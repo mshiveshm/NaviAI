@@ -10,6 +10,7 @@ import VoiceSearch from "@/pages/VoiceSearch";
 import ImageUpload from "@/pages/ImageUpload";
 import Chat from "@/pages/Chat";
 import Auth from "@/pages/Auth";
+import Dashboard from "@/pages/Dashboard";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/image-upload" component={ImageUpload} />
       <Route path="/chat" component={Chat} />
       <Route path="/auth" component={Auth} />
+      <Route path="/dashboard" component={Dashboard} />
       <Route component={NotFound} />
     </Switch>
   );

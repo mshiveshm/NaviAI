@@ -48,7 +48,7 @@ export default function Auth() {
           title: "Welcome back!",
           description: "You have successfully logged in."
         });
-        window.location.href = "/";
+        window.location.href = "/dashboard";
       } else {
         toast({
           title: "Login failed",
@@ -112,7 +112,7 @@ export default function Auth() {
           title: "Account created!",
           description: "Welcome to NaviAI! Your account has been created successfully."
         });
-        window.location.href = "/";
+        window.location.href = "/dashboard";
       } else {
         toast({
           title: "Registration failed",
